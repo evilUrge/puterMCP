@@ -1,0 +1,48 @@
+{
+  "name": "puter-mcp",
+  "version": "0.1.1",
+  "description": "MCP server bridging LLM environments with Puter's free AI APIs",
+  "type": "module",
+  "bin": {
+    "puter-mcp": "bin/puter-mcp.mjs"
+  },
+  "scripts": {
+    "build": "tsc && chmod 755 bin/puter-mcp.mjs",
+    "prepublishOnly": "npm run build",
+    "dev": "tsx src/index.ts",
+    "test": "vitest run",
+    "lint": "eslint src/"
+  },
+  "files": [
+    "dist",
+    "bin",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "mcp",
+    "puter",
+    "image-generation",
+    "ai",
+    "claude",
+    "cursor"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "node-fetch": "^3.3.2",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.3",
+    "@types/node": "^22.0.0",
+    "eslint": "^9.0.0",
+    "globals": "^17.4.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0",
+    "typescript-eslint": "^8.56.1",
+    "vitest": "^3.0.0"
+  }
+}
