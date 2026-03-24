@@ -1,6 +1,12 @@
-# puterMCP
+# puterMCP ⚠️ ARCHIVED
 
-**A local MCP server that bridges LLM environments with Puter's free AI & Cloud services**
+> **Status**: This project is no longer actively maintained.
+> 
+> **Reason**: Puter's API is designed for browser-based usage via Puter.js. Server-side direct API calls hit rate limits and cannot be used reliably. The official Puter.js library requires Node.js 24+, which is not widely available.
+
+---
+
+**Historical**: A local MCP server that bridged LLM environments with Puter's free AI & Cloud services
 
 puterMCP is a TypeScript/Node.js [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) server that runs locally via `npx` and acts as a bridge between any MCP-compatible LLM environment (Claude Desktop, Kilo Code, Trae, Cursor, Windsurf, etc.) and [Puter](https://puter.com)'s free, unlimited AI and Cloud APIs.
 
@@ -120,3 +126,15 @@ Once configured, restart your LLM environment. You can now ask it to generate im
 ## License
 
 MIT
+
+---
+
+## Alternatives
+
+If you need free image generation in your MCP/AI workflows, consider:
+
+1. **OpenRouter** - Free tier available with various image models
+2. **Together.ai** - Free tier with Flux models (10 req/min)
+3. **Direct API keys** - Use OpenAI, Google, or Anthropic APIs with your own keys
+
+For browser-based applications, the official [Puter.js](https://developer.puter.com/) library works well and supports image generation directly from frontend code.
