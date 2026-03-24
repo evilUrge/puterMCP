@@ -1,7 +1,8 @@
 {
   "name": "puter-mcp",
   "version": "0.1.1",
-  "description": "MCP server bridging LLM environments with Puter's free AI APIs",
+  "description": "MCP server bridging LLM environments with Puter's free AI APIs - DEPRECATED",
+  "deprecated": true,
   "type": "module",
   "bin": {
     "puter-mcp": "bin/puter-mcp.mjs"
